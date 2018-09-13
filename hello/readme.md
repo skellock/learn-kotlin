@@ -4,4 +4,4 @@ A simple and self-contained command line app. I followed the [kotlinlang.org tut
 
 Can be compiled with `kotlinc` and `kotlinc-native`.
 
-There's also an example of compiling without the Kotlin runtime and using `kotlin`. Not sure you'd ever do this, but you can.  Building without the runtime seems more like a way to build libraries.
+There's also an example of compiling without the Kotlin runtime and using `kotlin`. Not sure you'd ever do this, but you can. Building without the runtime seems more like a way to build libraries.

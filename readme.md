@@ -1,8 +1,8 @@
-# learning kotlin
+# Learning Kotlin
 
 A sandbox repo for me to learn [kotlin](https://kotlinlang.org/).
 
-# dependencies
+# Dependencies
 
 Here's the versions I used when trying this out.
 
@@ -12,6 +12,6 @@ Here's the versions I used when trying this out.
 - [openjdk](http://openjdk.java.net) `1.8.0_181`
 - [just](https://github.com/casey/just) `0.3.12`
 
-# instructions
+# Instructions
 
-See the `readme.md` in each folder.
+See the `readme.md` in each directory. Typing `just` in a sub-project will show a list of possible commands.
