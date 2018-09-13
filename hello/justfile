@@ -8,6 +8,10 @@ NAME = "hello"
     rm -f *.jar *.kexe
 
 # compile the app for java runtime
+lib:
+    kotlinc {{ NAME }}.kt -d {{ NAME }}.jar
+
+# compile the app for java runtime
 buildj:
     kotlinc {{ NAME }}.kt -d {{ NAME }}.jar -include-runtime
 
@@ -19,10 +23,14 @@ build:
 release:
     kotlinc-native {{ NAME }}.kt -o {{ NAME }} -opt
 
-# runs the app
+# runs the jar as an app
 @runj:
     java -jar {{ NAME }}.jar
 
 # runs the native app
 @run:
     ./{{ NAME }}.kexe
+
+# runs a lib with an external kotlin runtime
+@run-lib:
+    kotlin -classpath {{ NAME }}.jar HelloKt
